@@ -1,0 +1,28 @@
+{
+  "name": "gggo",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "6.11.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "file-type": "^7.4.0",
+    "htmlparser2": "^3.9.2",
+    "linebot": "^1.3.0",
+    "moment": "^2.20.1",
+    "mysql": "^2.15.0",
+    "node-schedule": "^1.2.5",
+    "pg": "7.4.0",
+    "request": "^2.83.0",
+    "soupselect": "^0.2.0"
+  }
+}
