@@ -1,5 +1,7 @@
 # GGGO line bot
 ---
+## 來吧!!
+![Alt text](/public/image/qrcode.png)
 ## 功能項目
 * 火車時刻表[搜尋](./assets/timeTable.js)
 * 圖片[搜尋](./assets/search.js)
