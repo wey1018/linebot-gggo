@@ -7,6 +7,7 @@ const { botconfig } = require("../config");
 const { searchImg, searchBeauty, searchTrain, searchAvgle, getAvgle } = require("../assets/search");
 const { searchYt, listYtch, listMyytch, addYtch, delYtch, subYtch } = require("../assets/youtube");
 const { ytchSubscription } = require("../assets/subscription");
+const { LatestVideo } = require("../routes/multicast");
 const bot = linebot(botconfig);
 const linebotParser = bot.parser();
 
@@ -117,6 +118,13 @@ bot.on("message", function(event) {
         }, function(reject) {
           res404(event, reject);
         });
+      break;
+    }
+    case /^schedule\s{1}\d+$/.test(text):{
+      if(userId === 'U664b2ed942423006a6935237e790b641'){
+        const timeLag = parseInt(text.replace(/^schedule\s{1}/, ""));
+        LatestVideo(timeLag)
+      }
       break;
     }
     // case /image/.test(type):
